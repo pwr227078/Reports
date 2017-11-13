@@ -1,0 +1,39 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage{arial}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\selectlanguage{polish}
+\begin{document}
+\section{Informacje o zakładzie pracy}
+\indent\indent Praktyka odbywała się w Instytucie Łączności – Państwowym Instytucie Badawczym, którego wrocławski oddział mieści przy ulicy Swojczyckiej 38. Zakład podzielony jest na dwie pracownie oraz dwa laboratoria:
+\begin{itemize}
+\item Pracownia Gospodarki i Inżynierii Widma;
+\item Pracownia Badania Pól i Zaburzeń;
+\item Laboratorium Badań EMC;
+\item Laboratorium Aparatury Pomiarowej EMC.
+\end{itemize}
+\indent\indent Moja praktyka studencka odbywała się w Pracowni Gospodarki i Inżynierii Widma, której kierownikiem, a zarazem opiekunem praktyk, jest dr inż. Dariusz Więcek. Pracownia ta specjalizuje się w~analizach systemów telekomunikacyjnych oraz wytwarzaniu oprogramowania w~języku C\#, z~wykorzystaniem .NET Framework oraz .NET Core.
+\section{Przebieg praktyki}
+\indent\indent Zgodnie z porozumieniem o organizacji praktyki, odbyła się ona w dniach od 1 września 2017r. do 29 września 2017r. Pierwszego dnia zostałem zapoznany z zasadami BHP, członkami zespołu programistów i~przedstawiono mi zarysy projektów, którymi zajmowałem się przez okres trwania praktyki. Głównym celem, postawionym na nadchodzący tydzień, było obycie się z~kodem aplikacji Job Watcher oraz Map Server, a~także rozproszonym systemem kontroli wersji Git. Dodatkowo przedstawiono mi alternatywny, scentralizowany system kontroli wersji TFS oraz jego wady i zalety w porównaniu z systemem Git. Jeden z modułów Job Watchera wymagał publikacji na serwerze, co pozwoliło mi na zapoznanie się z~systemem Windows Server, zbiorem usług Internet Information Services (IIS) i~zastosowanie różnych sposobów publikowania oprogramowania wytwarzanego przy użyciu Visual Studio. Podczas konfiguracji należało między innymi zapewnić i skonfigurować bazę danych PostgreSQL. Wymagało to nauczenia się podstawowych zapytań do bazy oraz pisania prostych skryptów, które pozwolą zautomatyzować w przyszłości np. proces przenoszenia na nowy serwer. Jako oprogramowanie wspomagające kontrolę nad bazą danych wykorzystałem zaproponowany program pgAdmin. \newline \indent Kolejnym zadaniem było wydzielenie na serwerze nowej maszyny wirtualnej (przy użyciu Hyper-V), podstawowa konfiguracja Ubuntu oraz uruchomienie, stworzonego przy użyciu frameworku .NET Core, Setting Store udostępniającego zasoby konfiguracyjne dla Map Servera. Map Server to oprogramowanie, które ma za zadanie udostępniać klientom posiadane zasoby mapowe, przykładowo mapy wysokościowe, morfologiczne czy mapy zabudowy. Wykorzystywane są one do obliczeń takich jak wyznaczanie natężenia pola elektrycznego od nadajnika, analiza potencjalnych przeszkód, które mogą znaleźć się na linii bezpośredniej widoczności radiowej nadajnika i odbiornika, bądź w~strefach Fresnela. Warto zaznaczyć, że do obliczeń propagacyjnych wykorzystywane są tu, między innymi, poznane przeze mnie już wcześniej w trakcie studiów, metoda ITU serii P. Po zrealizowaniu tych celów, które wymagały także pewnych zmian w~kodzie źródłowym i pełnym zakończeniu etapu uruchomienia wspomnianych aplikacji, przystąpiłem do refaktoryzacji istniejącego kodu serwera mapowego, a~także wyszukania i~poprawienia błędów występujących na obecnym etapie produkcji. Wymagało to zapoznania zarówno z bibliotekami, które zostały wyprodukowane przez Instytut, jak i~powszechnie używanymi, stworzonymi przez społeczność .NET Framework, np. ZeroMQ - biblioteka zapewniająca komunikację pomiędzy serwerem, a~klientem. Ponadto wykorzystana została nierelacyjna baza danych Redis, która opiera się o przechowywanie par klucz - wartość i uznawana jest za jedną z najlepszych, według badania zadowolenia użytkowników przeprowadzonego przez G2 Crowd, baz noSQL.\newline \indent Po zapoznaniu się całą architekturą serwera mapowego oraz aplikacji klienckiej do końca praktyk rozwijałem istniejące funkcjonalności, czy też tworzyłem nowe, takie jak możliwość odczytu pojedynczych punktów mapy, profili terenu w oparciu o dwa punkty, a także w oparciu o punkt początkowy, azymut i dystans.\newline \indent Warte uwagi jest także to, że zostałem zapoznany z~realizowanymi obecnie przez Instytut projektami biznesowymi i naukowo - badawczymi. Są to analizy DVB-T, projekt LokalDAB, tworzenie mobilnych stacji pomiarowych. Omówione zostały również najważniejsze fazy planowania sieci, działanie instytucji takich jak UKE, a~także mogłem zobaczyć w pełni funkcjonalne oprogramowanie służące do wykonywania analiz zasięgowych systemów radiowych.
+\section{Poznane metody wytwarzania oprogramowania}
+\indent\indent W trakcie praktyk zespół nieustannie czuwał nad jakością wytwarzanego przeze mnie kodu. Programiści chętnie dzielili się swoją wiedzą, wskazywali błędy, dyskutowali zaproponowane przeze mnie rozwiązania, proponowali podejście, które zapewnia większą wydajność, która jest bardzo istotna w~aplikacji typu serwer, uczyli zarządzania kodem. Dodatkowo poznałem kilka ciekawych książek, które są obowiązkowymi pozycjami, zarówno dla młodych programistów, jak i tych doświadczonych.\newline \indent Na szczególną uwagę zasługują jednak poznane przeze mnie:
+\begin{itemize}
+\item główne konwencje nazewnictwa, których stosowanie uznawane jest za dobrą praktykę;
+\item podstawy pisania testów jednostkowych z wykorzystaniem frameworku NUnit;
+\item technika Test-driven development (TDD) pozwalająca kontrolować poprawność kodu;
+\item wzorzec Arange Act Assert (AAA) wykorzystywany w testowaniu oprogramowania;
+\item wzorzec Model-View-ViewModel (MVVM) używany w Windows Presentation Foundation;
+\item wzorzec projektowy fabryka abstrakcyjna;
+\item nowe funkcjonalności narzędzia ReSharper.	
+\end{itemize}
+\section{Wnioski z odbytej praktyki}
+\indent\indent Odbyta praktyka studencka pozwoliła mi spojrzeć na programowanie, jak i na branżę teleinformatyczną pod zupełnie nowym kątem. Praca nad realnym projektem, pod okiem doświadczonych programistów pozwala na bardzo szybki rozwój nowych umiejętności. Mogłem ćwiczyć pod okiem profesjonalistów, poznawać sprawdzone, ale także proponować swoje sposoby na rozwiązanie problemów. W trakcie miesiąca poznałem wiele narzędzi i metod, które są powszechnie wykorzystywane, co może zaprocentować przy wejściu na rynek pracy. Miałem okazję obserwować pracę multidyscyplinarnego zespołu, który realizuje wachlarz różnorodnych zadań wymagających dogłębnej znajomości różnych gałęzi nauki, co jest inspirującym doświadczeniem. W trakcie praktyk przekonałem się, że dokonałem właściwego wyboru kierunku studiów i~po ich ukończeniu z przyjemnością podjąłbym pracę na podobnym stanowisku.
+\newline\newline\newline
+\indent Sporządził:\qquad\qquad\qquad\qquad Opiekun praktyk: \qquad\qquad\qquad\qquad Pełnomocnik prodziekana:
+\newline\newline\newline
+.............................\qquad\qquad\quad ....................................\quad\quad\qquad\qquad ............................................
+\end{document}
