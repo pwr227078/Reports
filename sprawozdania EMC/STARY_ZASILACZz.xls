@@ -1,0 +1,40 @@
+Type;ESL-3;;
+Version;1.83 SP1;;
+Date;13.Nov 17;;
+Mode;Receiver;;
+Start;150000;Hz;
+Stop;30000000;Hz;
+x-Axis;LOG;;
+Scan Count;1;;
+Transducer;;;
+Scan 1:;;;
+Start;150000;Hz;
+Stop;30000000;Hz;
+Step;4000;Hz;
+RBW;9000;Hz;
+Meas Time;0.05;s;
+Auto Ranging;OFF;;
+RF Att;10;dB;
+Auto Preamp;OFF;;
+Preamp;0;dB;
+TRACE 1 FINAL:;;;
+Trace Mode;CLR/WRITE;;
+Final Detector;QUASI PEAK;;
+x-Unit;Hz;;
+y-Unit;dBµV;;
+Final Meas Time;2;s;
+Margin;6;dB;
+Values;13;;
+1;158000;88.14;22.571569
+2;158000;51.48;-4.088431
+1;214000;79.44;16.391402
+2;218000;41.54;-11.354782
+1;242000;75.25;13.222701
+1;318000;71.75;11.991138
+1;374000;69.98;11.568382
+1;418000;64.55;7.062203
+1;5618000;71.24;11.24
+1;5634000;79.72;19.72
+2;5634000;44.1;-5.9
+1;6342000;70.89;10.89
+1;11758000;67.01;7.01

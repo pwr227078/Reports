@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Student 227078</Author>
+  <LastAuthor>Student 227078</LastAuthor>
+  <Created>2017-11-15T15:17:44Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12210</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="STARY_ZASILACZ">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="40" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell><Data ss:Type="String">Type</Data></Cell>
+    <Cell><Data ss:Type="String">ESL-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Version</Data></Cell>
+    <Cell><Data ss:Type="String">1.83 SP1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Date</Data></Cell>
+    <Cell><Data ss:Type="String">13.Nov 17</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mode</Data></Cell>
+    <Cell><Data ss:Type="String">Receiver</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Start</Data></Cell>
+    <Cell><Data ss:Type="Number">150000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Stop</Data></Cell>
+    <Cell><Data ss:Type="Number">30000000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">x-Axis</Data></Cell>
+    <Cell><Data ss:Type="String">LOG</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Scan Count</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Transducer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Scan 1:</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Start</Data></Cell>
+    <Cell><Data ss:Type="Number">150000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Stop</Data></Cell>
+    <Cell><Data ss:Type="Number">30000000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Step</Data></Cell>
+    <Cell><Data ss:Type="Number">4000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RBW</Data></Cell>
+    <Cell><Data ss:Type="Number">9000</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Meas Time</Data></Cell>
+    <Cell><Data ss:Type="Number">0.05</Data></Cell>
+    <Cell><Data ss:Type="String">s</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Auto Ranging</Data></Cell>
+    <Cell><Data ss:Type="String">OFF</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RF Att</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">dB</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Auto Preamp</Data></Cell>
+    <Cell><Data ss:Type="String">OFF</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Preamp</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">dB</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TRACE 1 FINAL:</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trace Mode</Data></Cell>
+    <Cell><Data ss:Type="String">CLR/WRITE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Final Detector</Data></Cell>
+    <Cell><Data ss:Type="String">QUASI PEAK</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">x-Unit</Data></Cell>
+    <Cell><Data ss:Type="String">Hz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">y-Unit</Data></Cell>
+    <Cell><Data ss:Type="String">dBµV</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Final Meas Time</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">s</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Margin</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">dB</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Values</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">158000</Data></Cell>
+    <Cell><Data ss:Type="Number">88.14</Data></Cell>
+    <Cell><Data ss:Type="Number">22.571569</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">158000</Data></Cell>
+    <Cell><Data ss:Type="Number">51.48</Data></Cell>
+    <Cell><Data ss:Type="Number">-4.0884309999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">214000</Data></Cell>
+    <Cell><Data ss:Type="Number">79.44</Data></Cell>
+    <Cell><Data ss:Type="Number">16.391401999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">218000</Data></Cell>
+    <Cell><Data ss:Type="Number">41.54</Data></Cell>
+    <Cell><Data ss:Type="Number">-11.354782</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">242000</Data></Cell>
+    <Cell><Data ss:Type="Number">75.25</Data></Cell>
+    <Cell><Data ss:Type="Number">13.222701000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">318000</Data></Cell>
+    <Cell><Data ss:Type="Number">71.75</Data></Cell>
+    <Cell><Data ss:Type="Number">11.991137999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">374000</Data></Cell>
+    <Cell><Data ss:Type="Number">69.98</Data></Cell>
+    <Cell><Data ss:Type="Number">11.568382</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">418000</Data></Cell>
+    <Cell><Data ss:Type="Number">64.55</Data></Cell>
+    <Cell><Data ss:Type="Number">7.0622030000000002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5618000</Data></Cell>
+    <Cell><Data ss:Type="Number">71.239999999999995</Data></Cell>
+    <Cell><Data ss:Type="Number">11.24</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5634000</Data></Cell>
+    <Cell><Data ss:Type="Number">79.72</Data></Cell>
+    <Cell><Data ss:Type="Number">19.72</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5634000</Data></Cell>
+    <Cell><Data ss:Type="Number">44.1</Data></Cell>
+    <Cell><Data ss:Type="Number">-5.9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">6342000</Data></Cell>
+    <Cell><Data ss:Type="Number">70.89</Data></Cell>
+    <Cell><Data ss:Type="Number">10.89</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">11758000</Data></Cell>
+    <Cell><Data ss:Type="Number">67.010000000000005</Data></Cell>
+    <Cell><Data ss:Type="Number">7.01</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
