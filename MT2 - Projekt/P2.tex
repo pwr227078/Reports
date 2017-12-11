@@ -62,41 +62,51 @@ EIRP~[kW]=0,001\cdot1~[W]\cdot10^{\frac{EIRP~[dBW]}{10}} => EIRP = 0,001\cdot10^
 \indent\indent Z powodu niedokładności mapy zaimplementowanej w programie, do obliczeń przyjęty został punkt najbliższy od zakładanego w projekcie. Ma on współrzędne geograficzne 20\textdegree 25’41”E, 49\textdegree 43’8”N i~znajduje się na terenie Limanowej. Tym samym zmieniła się też wysokość bezwzględna stopy masztu. Dla nowego położenia wynosi ona 459 m n.p.m.
 \begin{figure}[h!]
 \centering
+\includegraphics[scale=0.85]{pics/mapki/f11.png}
+\caption{Mapa wysokościowa badanego terenu}
+\end{figure}\newline
+\indent Wstępna analiza wysokościowa obszaru wokół nadajnika pozwala zauważyć, że jest to teren górzysty, z dużymi zmianami wysokości, a nadajnik umieszczony jest w pobliżu wzniesienia, co prawdopodobnie ograniczy propagację fal radiowych w kierunku wschodnim.
+\begin{figure}[h!]
+\centering
 \includegraphics[scale=0.85]{pics/mapki/f1.png}
 \caption{Częstotliwość, współrzędne geograficzne oraz wysokość zawieszenia anteny nadawczej, moc, wysokość zawieszenia anteny odbiorczej oraz E$_{min}$ (z uwzględnieniem poprawki HG) i E$_{max}$}
 \end{figure}
+\clearpage
 \subsection{Zasięg minimalny}
-\begin{figure}[h!]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{pics/mapki/f2.png}
 \caption{Mapa poziomu sygnału oraz powiększony fragment z naniesioną siatką azymutalną oraz ścieżką pomiędzy nadajnikiem (X) i odbiornikiem (+) dla E$_{min}$}
 \end{figure}
-\clearpage
-\begin{figure}[h!]
+\indent Sygnał, zgodnie z przewidywaniami jest bardzo szybko tłumiony w kierunku wschodnim. Minimalny zasięg - odległość do najbliższego punktu, w którym wartość natężenia pola elektrycznego spada poniżej E$_{min}$ - występuje na azymucie 70\textdegree. Dokładną odległość od nadajnika do tego punktu można określić dzięki funkcji analizującej profil terenu.
+\begin{figure}[h]
 \centering
 \includegraphics[scale=1.1]{pics/mapki/f3.png}
-\caption{Profil terenu dla ścieżki zaznaczonej na rys. 2 (dla E$_{min}$)}
-\end{figure}
-Dzięki profilowi terenu można określić dokładny minimalny zasięg stacji nadawczej, a także sprawdzić przesłonięcie 1. strefy Fresnela, która w powyższym  przypadku jest całkowicie odsłonięta. Z rys. 2 oraz 3 wynika, że zasięg minimalny wynosi 634 m na azymucie 70\textdegree. Decydujący wpływ ma tutaj szybkie narastania zbocza góry.
+\caption{Profil terenu dla ścieżki zaznaczonej na rys. 3 (dla E$_{min}$)}
+\end{figure}\\
+\indent Z rys. 4 wynika, że zasięg minimalny wynosi 634 m na podanym powyżej azymucie. Dodatkowo funkcja analizy profilu terenu pozwala na zbadanie 1. strefy Fresnela, w której przenoszona jest największa część energii. Pomiędzy analizowanymi punktami jest ona całkowicie odsłonięta.
+\clearpage
 \subsection{Zasięg maksymalny}
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=1.1]{pics/mapki/f4.png}
 \caption{Mapa poziomu sygnału z naniesioną siatką azymutalną oraz ścieżką pomiędzy nadajnikiem (X) i odbiornikiem (+) dla E$_{max}$}
 \end{figure}
-\clearpage
+\indent Zasięg maksymalny można określić przez znalezienie najbardziej oddalonego od nadajnika punku, w którym E $\geq$ E$_{min}$. Dodatkowo na prostej łączącej ten punkt z nadajnikiem nie mogą występować spadki natężenia pola elektrycznego poniżej E$_{min}$.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=1.1]{pics/mapki/f5.png}
-\caption{Profil terenu dla ścieżki zaznaczonej na rys. 4 (dla E$_{max}$)}
-\end{figure}
-Na tej trasie 1. strefa Fresnela jest prawie w całości odsłonięta. Dopiero w odległości około 16 km można zaobserwować niewielkie przesłonięcie od dołu przez wypukłość terenu. Zasięg maksymalny wynosi 17,814 km na azymucie 272\textdegree.
+\caption{Profil terenu dla ścieżki zaznaczonej na rys. 5 (dla E$_{max}$)}
+\end{figure}\\
+\indent Na tej trasie 1. strefa Fresnela jest prawie w całości odsłonięta. Dopiero w odległości około 16 km można zaobserwować niewielkie przesłonięcie od dołu przez wypukłość terenu. Zasięg maksymalny wynosi 17,814 km na azymucie 272\textdegree.
+\clearpage
 \section{Symulacje wykonane na platformie ,,Piast''}
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{pics/piast/f1.png}
 \caption{Częstotliwość, współrzędne geograficzne oraz wysokość zawieszenia anteny nadawczej, zastępcza moc promieniowana izotropowo, wysokość zawieszenia anteny odbiorczej}
 \end{figure}
+\indent Na platformie ,,Piast'' nadajnik umieszczony został w tym samym punkcie, co wcześniej w programie ,,Mapki''. Do wykonania symulacji użyta została metoda ITU.R P.1546-5. Wersja piąta jest najnowszą wersją tej metody. Wysokość anteny odbiorczej ustalona została na 1,5 m n.p.t. Pozwala to na opuszczenie wcześniej wprowadzonej poprawki na E$_{min}$, ponieważ ,,Piast'' uwzględnia to automatycznie. Symulację wykonano dla 50\% czasu i 50\% lokalizacji.
 \clearpage
 \subsection{Zasięg minimalny}
 \begin{figure}[h!]
@@ -107,7 +117,7 @@ Na tej trasie 1. strefa Fresnela jest prawie w całości odsłonięta. Dopiero w
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.45]{pics/piast/f4.png}
-\caption{Profil terenu dla ścieżki zaznaczonej na rys. 7 (dla E$_{min}$)}
+\caption{Profil terenu dla ścieżki zaznaczonej na rys. 8 (dla E$_{min}$)}
 \end{figure}
 Wynik bardzo zbliżony do uzyskanego metodą ITU-R P.370-7. Szybko narastające zbocze góry okazuje się skuteczną przeszkodą. Zasięg minimalny na azymucie 56,49\textdegree ~wynosi 980 m.
 \clearpage
@@ -120,7 +130,7 @@ Wynik bardzo zbliżony do uzyskanego metodą ITU-R P.370-7. Szybko narastające 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.45]{pics/piast/f3.png}
-\caption{Profil terenu dla ścieżki zaznaczonej na rys. 9 (dla E$_{max}$)}
+\caption{Profil terenu dla ścieżki zaznaczonej na rys. 10 (dla E$_{max}$)}
 \end{figure}
 Rezultaty uzyskane są bardzo podobne do uzyskanych w programie ,,Mapki''. Zauważalne jest jednak skrócenie zasięgu maksymalnego o około 4,5 km. Wynosi on 13,29 km na azymucie 277,21\textdegree.
 \clearpage
@@ -140,12 +150,14 @@ Rezultaty uzyskane są bardzo podobne do uzyskanych w programie ,,Mapki''. Zauwa
     \end{tabular}%
   \label{tab:addlabel}%
 \end{table}%
-\indent XXX
+\indent Z powyższego zestawienia wynika, że zarówno azymut zasięgu minimalnego, jak i maksymalnego dla obu metod jest podobny. Dla zasięgu minimalnego różnica wynosi 13,51\textdegree, a dla zasięgu maksymalnego zaledwie 5,21\textdegree. Zasięgi minimalne różnią się o 346 metrów na korzyść wyników otrzymanych metodą ITU-R P.1546-5. Większa różnica występuje dla zasięgów maksymalnych. Tutaj metodą ITU-R P.370-7 uzyskano zasięg większy o 4 524 m.\\
+\indent Należy też zaznaczyć, że metoda ITU-R P.370 jest już nieaktualna. ITU-R P.1546 jest jej następcą i to ona powinna być stosowana do obliczeń, tak więc wyniki nią otrzymane można uznać za bliższe rzeczywistym warunkom.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.6]{pics/piast/f6.png}
 \caption{Pokrycie miasta Limanowa, w miejscach niepokolorowanych sygnał poniżej E$_{min}$, zdjęcie satelitarne z platformy ,,Piast''}
-\end{figure}
+\end{figure}\\
+\indent Na rys. 12 przedstawione zostało zdjęcie satelitarne z naniesionymi poziomami natężenia pola. Jak widać tak umieszczony nadajnik zapewnia pokrycie terenu całego miasta, a także okolicznych wsi.
 \clearpage
 \section{Bibliografia}
 [1] ITU, ITU-R Recommendation P.370-7, VHF and UHF propagation curves for the frequency range from 30 MHz to 1 000 MHz
