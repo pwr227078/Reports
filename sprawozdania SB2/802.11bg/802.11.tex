@@ -17,13 +17,13 @@
 \begin{document}
 \section{Wstęp}
 \indent\indent Podczas laboratorium badane są przepustowości standardów IEEE 802.11b oraz 802.11g. Odnoszą się one do warstwy fizycznej (PHY) oraz podwarstwy kontroli dostępu do medium (MAC) w~warstwie łącza modelu ISO OSI. Oba standardy zostały w~pełni ukończone - ich rozwój nie jest kontynuowany, a obecnie pierwszy z nich praktycznie całkowicie odszedł z użycia. Dla 802.11b/g w Polsce zdefiniowano 13 kanałów w paśmie 2,4 - 2,4835 GHz. Każdy z~kanałów ma szerokość 22 MHz. Częstotliwości środkowe kanałów przesunięte są względem siebie o 5 MHz, co powoduje nakładanie się wielu kanałów. Jedynie kanały 1, 6 oraz 11 są od siebie oddalone na tyle, że nie występuje ich nakładanie się, a nawet występuje odstęp 3 MHz pomiędzy granicznymi częstotliwościami kanałów.\\
-\indent IEEE 802.11b posiada dwie metody rozpraszania widma pozwalające na osiąganie różnych przepływności. Pierwsza z nich to DSSS (Direct Sequence Spread Spectrum), polegająca na mnożeniu sygnału przez szybkozmienny sygnał kodowy. Pozwala to na rozproszenie (poszerzenie) widma sygnału i tym samym uniknięcie zakłóceń wąskopasmowych. Przy DSSS stosowane są modulacje DBPSK pozwalająca osiągnąć przepływność 1 Mbps oraz DQPSK zwiększająca przepływność do 2 Mbps. Większe szybkości udało się osiągnąć poprzez zastosowanie CCK (Complementary Code Keying), które działa jak DSSS, jednak wykorzystuje sprawniejsze ciągi kodowe. Pozwala to na osiągnięcie 5.5 Mbps przy modulacji DBPSK oraz 11 Mbps dla DQPSK.\\
-\indent IEEE 802.11g można traktować jako rozwinięcie standardu 802.11b. Dostępne są szybkości 1,~2,~5,5, 11 Mbps realizowane jak w 802.11b oraz dzięki zastosowaniu Orthogonal Frequency Division Multiplexing (OFDM) i innych modulacji: 6, 9 Mbps z modulacją BPSK, 12, 18 Mbps z~modulacją QPSK, 24, 36 Mbps modulowane z użyciem 16-QAM oraz 48 i 54 Mbps przy wykorzystaniu modulacji 64-QAM.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.45]{pics/f2.png}
 \caption{Schemat kanałów dostępnych w Europie dla IEEE 802.11b/g.}
 \end{figure}\\
+\indent IEEE 802.11b posiada dwie metody rozpraszania widma pozwalające na osiąganie różnych przepływności. Pierwsza z nich to DSSS (Direct Sequence Spread Spectrum), polegająca na mnożeniu sygnału przez szybkozmienny sygnał kodowy. Pozwala to na rozproszenie (poszerzenie) widma sygnału i tym samym uniknięcie zakłóceń wąskopasmowych. Przy DSSS stosowane są modulacje DBPSK pozwalająca osiągnąć przepływność 1 Mbps oraz DQPSK zwiększająca przepływność do 2 Mbps. Większe szybkości udało się osiągnąć poprzez zastosowanie CCK (Complementary Code Keying), które działa jak DSSS, jednak wykorzystuje sprawniejsze ciągi kodowe. Pozwala to na osiągnięcie 5.5 Mbps przy modulacji DBPSK oraz 11 Mbps dla DQPSK.\\
+\indent IEEE 802.11g można traktować jako rozwinięcie standardu 802.11b. Dostępne są szybkości 1,~2,~5,5, 11 Mbps realizowane jak w 802.11b oraz dzięki zastosowaniu Orthogonal Frequency Division Multiplexing (OFDM) i innych modulacji: 6, 9 Mbps z modulacją BPSK, 12, 18 Mbps z~modulacją QPSK, 24, 36 Mbps modulowane z użyciem 16-QAM oraz 48 i 54 Mbps przy wykorzystaniu modulacji 64-QAM.\\
 \indent W trybie kompatybilności z 802.11b preambuła i nagłówek nadawane są z szybkością 1 Mbps. W trybie ,,g only'' preambuła i nagłówek przesyłane są z szybkością 6 Mbps. Wpływ długości preambuły na przepływność podlega badaniu podczas laboratorium.\\
 \indent Oba standardy implementują Automatic Rate Fallback (ARF), co pozwala na automatyczną adaptację szybkości w zależności od minimalnej mocy odebranej. Zmniejszenie szybkości transmisji przy obniżeniu się poziomu mocy pozwala na utrzymanie stałej stopy błędów Bit Error Rate (BER) na poziomie 10$^{-5}$. W przypadku niskiego poziomu mocy i wymuszonej wysokiej szybkości transmisji, stopa błędów może ulec gwałtownemu wzrostowi, co obniży jakość transmisji i będzie wymuszało kolejne retransmisje obniżające rzeczywistą przepustowość.\\
 \indent W dalszej części laboratorium badany jest wpływ długości pakietu UDP na przepustowość. Na tym etapie szybkość ustawiona jest na maksymalną teoretyczną wartość równą 54 Mbps. Urządzenie po odebraniu określa czy otrzymany z wyższej warstwy pakiet może zostać przesłany w jednej ramce. Maksymalna długość wynosi 2 346 B. Jeśli nie, to następuje jego fragmentacja. Zgodnie z~protokołem CSMA/CA i DCF - rozproszoną funkcją koordynującą (w praktyce jedynie ta jest implementowana w urządzeniach powszechnego użytku) urządzenie zgłasza gotowość przez wysłanie pakietu Ready To Send (RTS). Jeśli po okresie Short Interframe Space (SIFS) otrzyma pakiet Clear To Send (CTS), to rozpoczyna transmisję ramek. Po każdej z nich, po odczekaniu SISF, oczekuje na potwierdzenie ACK od odbiorcy. Następnie po odczekaniu kolejnego SISF, wysyła następny fragment nie rywalizując ponownie o dostęp do medium. Po otrzymaniu ACK po ostatnim fragmencie czeka okres Distributed IFS (DIFS).\\
@@ -110,9 +110,15 @@
 \item Przepustowości zawsze są niższe od przepływności, jednak różnica jest tym większa, im większa jest przepływność.
 \item Stosowanie krótkiej preambuły poprawia przepustowość oraz obniża jitter.
 \item Zwiększanie przepływności powoduje zmniejszenie wartości jittera.
-\item Długość pakietu jest optymalna, kiedy jest równa maksymalnej długości ramki lub jej całkowitej wielokrotności. Dla tych długości również jitter przyjmuje wartości optymalne.
+\item Długość pakietu jest optymalna, kiedy jest równa maksymalnej długości ramki lub jej całkowitej wielokrotności. Dla tych długości również jitter przyjmuje wartości optymalne. Podczas laboratorium wymuszono fragmentację dla pakietów o długości większej niż 1 470 B.
 \item Zwiększenie progu fragmentacji w warstwie MAC pozwala na zwiększenie przepustowości.
 \item Dla badanych wartości progowych RTS/CTS zauważono znikomą różnicę przepustowości. Wynosiła ona niecałe 0,4 Mbps na korzyść progu 750.
-\item Włączenie szyfrowania WEP obniżyło przepustowość. Wiąże się to z koniecznością przesyłania większej ilości danych.
+\item Włączenie szyfrowania WEP obniżyło przepustowość. Wiąże się to z koniecznością przesyłania większej ilości danych (struktura danych w ramce szyfrowanej przedstawiona na rys. 12).
 \end{itemize}
+\clearpage
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{pics/f12.png}
+\caption{Struktura ramki 802.11 z wektorem inicjującym (IV) i zaszyfrowanym polem danych.}
+\end{figure}
 \end{document}
