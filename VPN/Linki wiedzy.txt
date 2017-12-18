@@ -7,9 +7,10 @@ https://pl.vpnmentor.com/blog/porownanie-protokolow-vpn-pptp-vs-l2tp-vs-openvpn-
 https://pl.vpnmentor.com/blog/zalety-wady-vpn-wszystko-co-musisz-wiedziec-na-ten-temat/
 https://pl.vpnmentor.com/blog/jak-ogladac-abc-comedy-z-dowolnego-miejsca-na-swiecie/
 https://pl.vpnmentor.com/blog/czy-vpn-sa-legalne/
-https://pl.vpnmentor.com/blog/vpn-vs-vnc-co-jest-bezpieczniejsze-co-jest-szybsze/
-https://technet.microsoft.com/en-us/library/cc779919(v=ws.10).aspx
-
+CIEKAWOSTKA - https://pl.vpnmentor.com/blog/vpn-vs-vnc-co-jest-bezpieczniejsze-co-jest-szybsze/
+WA¯NY LINK - https://technet.microsoft.com/en-us/library/cc779919(v=ws.10).aspx
+WA¯NY LINK - https://technet.microsoft.com/en-us/library/dd469817(v=ws.10).aspx
+https://technet.microsoft.com/en-us/library/cc957983.aspx
 https://sekurak.pl/praktyczna-implementacja-sieci-vpn-na-przykladzie-openvpn/
 https://www.bestvpn.com/vpn-encryption-the-complete-guide/
 
